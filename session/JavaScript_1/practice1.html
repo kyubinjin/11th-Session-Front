@@ -16,13 +16,10 @@
     <div id="one" class="wrapper"></div>
 
     <script>
-      // 1. 새로운 동적 element를 만들고, 그 값을 div에 담기
-
-      // 2. 만든 div element에 class 속성 추가하기
-
-      // 3.만든 div element에 innerText 추가하기
-
-      // 4. 만든 div element를 id가 one인 요소(div)의 자식 요소로 추가하기
+      let div1 = document.createElement('div');
+      div1.setAttribute("class","background-class");
+      div1.innerText = "피곤하당";
+      document.querySelector("#one").append(div1);
     </script>
   </body>
 </html>
