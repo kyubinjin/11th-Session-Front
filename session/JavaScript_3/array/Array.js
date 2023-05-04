@@ -23,9 +23,20 @@ const lionsB = [
 ];
 
 //문제 1) lions 배열에 lionsB 배열을 합치기 (스프레드 사용)
+const lionsA = [...lions, ...lionsB];
 
+console.log(lionsA);
 //문제 2) 학과번호가 76인 아기사자의 name 정보만 담은 배열을 만들기
+const lions76 = lionsA.filter((lion)=> lion.deptNum ===76);
+console.log(lions76);
 
-//문제 4) 프론트엔드 트랙의 아기사자의 명단을 구하고, deptNum 오름차순 정렬
-
-//문제 5) 기획디자인 트랙의 아기사자의 명단을 구하고, deptNum 내림차순 정리
+const nameArray = lions76.map((lion)=> lion.name);
+console.log(nameArray);
+//문제 3) 프론트엔드 트랙의 아기사자의 명단을 구하고, deptNum 오름차순 정렬
+const lionsp = lionsA.filter((lionp)=> lionp.track ==="프론트엔드");
+lionsp.sort((a,b) => a.deptNum-b.deptNum);
+console.log(lionsp);
+//문제 4) 기획디자인 트랙의 아기사자의 명단을 구하고, deptNum 내림차순 정리
+const lionsg = lionsA.filter((liong)=> liong.track ==="기획디자인");
+lionsg.sort((a,b) => b.deptNum-a.deptNum);
+console.log(lionsg);
