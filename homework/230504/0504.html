@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="0504.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <!-- 상단바 -->
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <span id="text-todolist">Todolist</span>
+          <img id="heart" src="images/heart.png" />
+        </div>
+        <div class="top-bar-right">
+          <img id="alarm" src="images/alarm.png" />
+          <img id="profile" src="images/profile.png" />
+          <img id="menu" src="images/menu.png" />
+        </div>
+      </div>
+      <!-- 상단바 제외 아래 내용 -->
+      <!-- <div class="contents"> -->
+      <!-- to do 할 일들 -->
+      <img id="tape1" src="images/tape1.png" />
+      <div class="container1">
+        <!-- <div class="todo-box"> -->
+        <button id="write" type="submit">작성하기</button>
+        <img id="pencil" src="images/pencil.png" />
+        <!-- 작성취소도 구현하기 -->
+        <p class="text-todo">To Do</p>
+        <form class="todo-form">
+          <ul class="todo-ul">
+            <li>
+              <input type="checkbox" name="todo-checkbox" />
+              <div class="input-and-underline">
+                <input class="todo-input" placeholder="할 일을 입력해 주세요" />
+                <hr class="underline" />
+              </div>
+              <div class="input-and-images">
+                <img id="check" src="images/check.png" />
+                <img id="modify" src="images/modify.png" />
+                <img id="trashcan" src="images/trashcan.png" />
+              </div>
+            </li>
+          </ul>
+        </form>
+        <!-- </div> -->
+      </div>
+      <!-- 이것저것 -->
+      <!-- <div class="container2"> -->
+      <!-- <div class="container2-up"> -->
+      <p class="date">Friday, May 5 |</p>
+      <!-- <hr class="v-line" /> -->
+      <img id="weather" src="images/weather.png" />
+      <p class="temperature">18°C</p>
+      <!-- </div>
+        <div class="container2-down"> -->
+      <img id="music" src="images/music.png" />
+      <p class="text-song">Mamma Mia - ABBA</p>
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- done 한 일들 -->
+      <img id="tape2" src="images/tape2.png" />
+      <div class="container3">
+        <!-- <div class="done-box"> -->
+        <p class="text-done">Done</p>
+        <form class="done-form">
+          <ul class="done-ul">
+            <li>
+              <input type="checkbox" name="todo-checkbox" />
+              <div class="input-and-underline">
+                <input class="todo-input" placeholder="할 일을 입력해 주세요" />
+                <hr class="underline" />
+              </div>
+              <img id="trashcan" src="images/trashcan.png" />
+            </li>
+          </ul>
+        </form>
+        <!-- </div> -->
+      </div>
+      <!-- </div> -->
+    </div>
+    <script src="0504.js"></script>
+  </body>
+</html>
