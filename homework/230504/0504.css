@@ -1,10 +1,10 @@
-/*상단 바*/
-
 .background {
   width: 1919px;
   height: 1080px;
   background-image: url("images/background.png");
 }
+
+/* 상단 바 */
 
 .top-bar {
   width: 1919px;
@@ -64,7 +64,7 @@
   margin-left: 23.63px;
 }
 
-/*to do*/
+/* to do 할 일들 */
 
 #tape1 {
   position: absolute;
@@ -88,8 +88,6 @@
 }
 
 #add-button {
-  /* width: 104px;
-  height: 40px; */
   margin-left: 616px;
   margin-top: 15px;
 
@@ -204,7 +202,7 @@
   margin-left: 25px;
 }
 
-/*이것저것*/
+/* 디자인 요소들 */
 
 .container2 {
   position: absolute;
@@ -227,15 +225,6 @@
   font-size: 48px;
   line-height: 60px;
 }
-
-/* .v-line {
-  height: 50px;
-  width: 3px;
-  border-width: 0px;
-  color: #000;
-  background-color: #000;
-  display: inline-block;
-} */
 
 #weather {
   position: absolute;
@@ -282,7 +271,7 @@
   line-height: 60px;
 }
 
-/*done 한 일들*/
+/* done 한 일들 */
 
 #tape2 {
   position: absolute;
@@ -369,6 +358,7 @@
 #done-del {
   width: 30px;
   height: 33px;
+  background: transparent;
   background-image: url("images/trashcan.png");
   border: none;
   margin-left: 40px;

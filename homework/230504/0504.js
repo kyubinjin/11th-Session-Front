@@ -27,7 +27,7 @@ const printTodoItem = (text) => {
   document.querySelector(".todo-ul").appendChild(todoItem);
 };
 
-// 작성하기 눌렀을 때 printTodoItem 출력
+// 작성하기 버튼 눌렀을 때 printTodoItem 출력
 addBtn.addEventListener("click", printTodoItem);
 
 // printFinalTodoItem 정의
@@ -51,8 +51,6 @@ const printFinalTodoItem = (e) => {
 
     todoItem.appendChild(todoMod);
     todoItem.appendChild(todoDel);
-
-    // printTodoItem2(todoContent);
   }
 };
 
@@ -76,7 +74,7 @@ const toggleTodoToDone = (e) => {
   printDoneItem(todoText);
 };
 
-// printDoneItem 정의 (끝낸 일 출력)
+// printDoneItem 정의 (done 출력)
 const printDoneItem = (text) => {
   const doneItem = document.createElement("li");
   const doneCkbox = document.createElement("button");
