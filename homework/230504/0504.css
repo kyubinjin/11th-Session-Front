@@ -1,10 +1,10 @@
+/*상단 바*/
+
 .background {
   width: 1919px;
   height: 1080px;
   background-image: url("images/background.png");
 }
-
-/*상단바*/
 
 .top-bar {
   width: 1919px;
@@ -64,14 +64,7 @@
   margin-left: 23.63px;
 }
 
-/*상단바 제외 내용*/
-/* .contents {
-  width: 1919px;
-  height: 1080px;
-  background-image: url("images/background.png");
-} */
-
-/*to do 할 일들*/
+/*to do*/
 
 #tape1 {
   position: absolute;
@@ -123,46 +116,31 @@
   line-height: 60px;
 }
 
+.todo-ul {
+  list-style: none;
+  margin-top: -560px;
+}
+
 .todo-form {
   position: relative;
   width: 652.33px;
   height: 691px;
-  top: -50px;
+  top: -560px;
 }
 
-.todo-ul {
+#todo-item {
   list-style: none;
-  margin-top: 150px;
 }
 
-/* .todo-li {
-  display: flex;
-  width: 652.33px;
-  height: 41px;
-} */
-
-/* .input-and-underline {
-  width: 489px;
-  height: 40px;
+#todo-checkbox {
+  width: 28.5px;
+  height: 28.5px;
+  background-color: transparent;
+  border: 4px solid black;
+  border-radius: 5px;
+  left: 63.75;
+  top: 150.75;
   display: inline-block;
-} */
-
-#todo-checkbox1 {
-  width: 28.5px;
-  height: 28.5px;
-  background-color: transparent;
-  border: 4px solid black;
-  left: 63.75;
-  top: 150.75;
-}
-
-#todo-checkbox2 {
-  width: 28.5px;
-  height: 28.5px;
-  background-color: transparent;
-  border: 4px solid black;
-  left: 63.75;
-  top: 150.75;
 }
 
 #todo-input {
@@ -180,13 +158,8 @@
   line-height: 40px;
   left: 147px;
   top: 144px;
+  margin-left: 50px;
 }
-
-/* .underline {
-  width: 489px;
-  border: 0px;
-  border-top: 4px solid black;
-} */
 
 #submit-check {
   width: 41.91px;
@@ -196,16 +169,21 @@
   border: none;
   left: 660.55;
   top: 151.48px;
+  margin-left: 50px;
 }
 
 #todo-mod {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
 }
 
 #todo-del {
   width: 30px;
   height: 33px;
+  background-image: url("images/trashcan.png");
+  border: none;
+  margin-left: 25px;
 }
 
 /*이것저것*/
@@ -312,7 +290,7 @@
   width: 139px;
   height: 73.85px;
   left: 348px;
-  top: 20px;
+  top: 13px;
 
   font-family: "Dovemayo_gothic";
   font-style: normal;
@@ -321,11 +299,11 @@
   line-height: 60px;
 }
 
-.done-form {
+.done-div {
   position: relative;
-  width: 652.33px;
+  width: 779px;
   height: 691px;
-  top: -50px;
+  top: -130px;
 }
 
 .done-ul {
@@ -333,20 +311,25 @@
   margin-top: 150px;
 }
 
-.done-li {
+/* .done-li {
   display: flex;
   width: 652.33px;
   height: 41px;
-}
+} */
 
 .done-checkbox {
   width: 28.5px;
   height: 28.5px;
   background-color: transparent;
   background-image: url("images/heart-in-box.png");
+  background-repeat: no-repeat;
+  background-position: center;
   border: 4px solid black;
-  margin-top: 157.38px;
-  margin-left: 61.75px;
+  border-radius: 5px;
+  left: 63.75;
+  top: 150.75;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 .done-input {
@@ -363,12 +346,15 @@
   font-size: 32px;
   line-height: 40px;
   margin-top: 150.63px;
-  margin-left: 145px;
+  margin-left: 42px;
 }
 
 .done-del {
   width: 30px;
   height: 33px;
+  background-image: url("images/trashcan.png");
+  border: none;
+  margin-left: 40px;
 }
 
 /* 폰트 웹주소 */

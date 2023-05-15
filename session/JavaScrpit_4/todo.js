@@ -45,7 +45,7 @@ const printTodoItem = (text) => {
 const deleteTodoItem = (e) => {
   // 삭제 버튼의 부모 요소까지 삭제해야하므로 부모 요소까지 올라가 선택한 후 삭제
   const target = e.target.parentNode;
-  document.querySelector(".todo-ul").removeChild(target);
+  document.querySelector(".todo-list").removeChild(target);
 };
 
 // 할 일 -> 끝낸 일 이동
