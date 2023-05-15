@@ -22,7 +22,7 @@
   float: left;
 }
 
-#text-todolist {
+#title-todolist {
   display: inline-block;
   position: absolute;
   width: 180px;
@@ -32,12 +32,10 @@
   line-height: 47px;
 }
 
-#heart {
+#title-heart {
   position: absolute;
-  left: 9.5%;
-  right: 86.37%;
-  top: 1.85%;
-  bottom: 93.94%;
+  left: 210px;
+  top: 20px;
 }
 
 .top-bar-right {
@@ -81,7 +79,7 @@
   height: 51px;
   left: 531px;
   top: 118px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .container1 {
@@ -93,9 +91,10 @@
   background-image: url("images/todo-memo.png");
   box-shadow: 0px 4px 3px 3px rgba(220, 204, 199, 0.25);
   filter: drop-shadow(4px 4px 4px #dcccc7);
+  z-index: 2;
 }
 
-#write {
+#add-button {
   /* width: 104px;
   height: 40px; */
   margin-left: 616px;
@@ -110,20 +109,7 @@
   background: transparent;
 }
 
-.todo-form {
-  width: 500px;
-  height: 500px;
-}
-
-.todo-ul {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  left: 59px;
-  top: 143px;
-}
-
-.text-todo {
+.title-todo {
   position: absolute;
   width: 137px;
   height: 70px;
@@ -137,30 +123,89 @@
   line-height: 60px;
 }
 
-.input-and-underline {
-  width: 300px;
-  height: 20px;
-  display: inline-block;
+.todo-form {
+  position: relative;
+  width: 652.33px;
+  height: 691px;
+  top: -50px;
 }
 
-.todo-input {
-  border: none;
+.todo-ul {
+  list-style: none;
+  margin-top: 150px;
+}
+
+/* .todo-li {
+  display: flex;
+  width: 652.33px;
+  height: 41px;
+} */
+
+/* .input-and-underline {
+  width: 489px;
+  height: 40px;
+  display: inline-block;
+} */
+
+#todo-checkbox1 {
+  width: 28.5px;
+  height: 28.5px;
+  background-color: transparent;
+  border: 4px solid black;
+  left: 63.75;
+  top: 150.75;
+}
+
+#todo-checkbox2 {
+  width: 28.5px;
+  height: 28.5px;
+  background-color: transparent;
+  border: 4px solid black;
+  left: 63.75;
+  top: 150.75;
+}
+
+#todo-input {
+  width: 489px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid black;
   background: transparent;
   font-family: "Dovemayo_gothic";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
+  left: 147px;
+  top: 144px;
 }
 
-.underline {
-  width: 300px;
+/* .underline {
+  width: 489px;
   border: 0px;
-  border-top: 5px solid black;
+  border-top: 4px solid black;
+} */
+
+#submit-check {
+  width: 41.91px;
+  height: 34.01px;
+  background: transparent;
+  background-image: url("images/check.png");
+  border: none;
+  left: 660.55;
+  top: 151.48px;
 }
 
-.input-and-images {
-  display: inline-block;
+#todo-mod {
+  width: 25px;
+  height: 25px;
+}
+
+#todo-del {
+  width: 30px;
+  height: 33px;
 }
 
 /*이것저것*/
@@ -208,7 +253,7 @@
   position: absolute;
   width: 92px;
   height: 60px;
-  left: 1530px;
+  left: 1522px;
   top: 157px;
 
   font-family: "Dovemayo_gothic";
@@ -216,13 +261,14 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
+  letter-spacing: -7px;
 }
 
 #music {
   position: absolute;
   width: 54px;
   height: 54px;
-  left: 1127px;
+  left: 1130px;
   top: 285px;
 }
 
@@ -261,7 +307,7 @@
   box-shadow: 4px 4px 3px 3px #c5ced3, 4px 4px 3px 3px rgba(197, 206, 211, 0.25);
 }
 
-.text-done {
+.title-done {
   position: absolute;
   width: 139px;
   height: 73.85px;
@@ -273,6 +319,56 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
+}
+
+.done-form {
+  position: relative;
+  width: 652.33px;
+  height: 691px;
+  top: -50px;
+}
+
+.done-ul {
+  list-style: none;
+  margin-top: 150px;
+}
+
+.done-li {
+  display: flex;
+  width: 652.33px;
+  height: 41px;
+}
+
+.done-checkbox {
+  width: 28.5px;
+  height: 28.5px;
+  background-color: transparent;
+  background-image: url("images/heart-in-box.png");
+  border: 4px solid black;
+  margin-top: 157.38px;
+  margin-left: 61.75px;
+}
+
+.done-input {
+  width: 489px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid black;
+  background: transparent;
+  font-family: "Dovemayo_gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 150.63px;
+  margin-left: 145px;
+}
+
+.done-del {
+  width: 30px;
+  height: 33px;
 }
 
 /* 폰트 웹주소 */

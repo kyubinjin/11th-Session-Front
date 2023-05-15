@@ -12,8 +12,8 @@
       <!-- 상단바 -->
       <div class="top-bar">
         <div class="top-bar-left">
-          <span id="text-todolist">Todolist</span>
-          <img id="heart" src="images/heart.png" />
+          <span id="title-todolist">Todolist</span>
+          <img id="title-heart" src="images/heart.png" />
         </div>
         <div class="top-bar-right">
           <img id="alarm" src="images/alarm.png" />
@@ -27,23 +27,22 @@
       <img id="tape1" src="images/tape1.png" />
       <div class="container1">
         <!-- <div class="todo-box"> -->
-        <button id="write" type="submit">작성하기</button>
+        <button id="add-button" type="button">작성하기</button>
         <img id="pencil" src="images/pencil.png" />
         <!-- 작성취소도 구현하기 -->
-        <p class="text-todo">To Do</p>
+        <p class="title-todo">To Do</p>
         <form class="todo-form">
           <ul class="todo-ul">
-            <li>
-              <input type="checkbox" name="todo-checkbox" />
-              <div class="input-and-underline">
-                <input class="todo-input" placeholder="할 일을 입력해 주세요" />
-                <hr class="underline" />
-              </div>
-              <div class="input-and-images">
-                <img id="check" src="images/check.png" />
-                <img id="modify" src="images/modify.png" />
-                <img id="trashcan" src="images/trashcan.png" />
-              </div>
+            <li id>
+              <!-- <input type="checkbox" id="todo-checkbox" />
+              <input
+                type="text"
+                id="todo-input"
+                placeholder="할 일을 입력해 주세요"
+              />
+              <button id="submit-check" type="submit"></button>
+              <img id="todo-mod" src="images/modify.png" />
+              <button id="todo-del" type="button"></button> -->
             </li>
           </ul>
         </form>
@@ -66,16 +65,18 @@
       <img id="tape2" src="images/tape2.png" />
       <div class="container3">
         <!-- <div class="done-box"> -->
-        <p class="text-done">Done</p>
+        <p class="title-done">Done</p>
         <form class="done-form">
           <ul class="done-ul">
-            <li>
-              <input type="checkbox" name="todo-checkbox" />
-              <div class="input-and-underline">
-                <input class="todo-input" placeholder="할 일을 입력해 주세요" />
-                <hr class="underline" />
+            <li class="done-li">
+              <button class="done-checkbox" type="button"></button>
+              <!-- <div class="input-and-underline"> -->
+              <input class="done-input" placeholder="할 일을 입력해 주세요" />
+              <!-- </div> -->
+              <div class="input-and-images">
+                <img class="done-del" src="images/trashcan.png" />
+                <!-- <button id="trashcan" type="button"></button> -->
               </div>
-              <img id="trashcan" src="images/trashcan.png" />
             </li>
           </ul>
         </form>
