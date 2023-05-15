@@ -70,24 +70,10 @@ const deleteFinalTodoItem = (e) => {
 
 // toggleToDoToDone 함수 정의 (todo에서 done으로 이동)
 const toggleTodoToDone = (e) => {
-  // todo list에서 item 삭제
+  const todoItem = e.target.parentNode;
+  const todoText = todoItem.querySelector("#todo-input").value;
   deleteFinalTodoItem(e);
-  // done list에 item 추가
-  printDoneItem(e.target.innerText);
-};
-
-// deleteDoneItem 정의 (done 삭제)
-const deleteDoneItem = (e) => {
-  const target = e.target.parentNode;
-  document.querySelector(".done-ul").removeChild(target);
-};
-
-// toggleDoneToDo 함수 정의 (done에서 todo로 이동)
-const toggleDoneToTodo = (e) => {
-  // todo list에서 item 삭제
-  deleteDoneItem(e);
-  // done list에 item 추가
-  printFinalTodoItem(e.target.innerText);
+  printDoneItem(todoText);
 };
 
 // printDoneItem 정의 (끝낸 일 출력)
@@ -113,4 +99,18 @@ const printDoneItem = (text) => {
   doneItem.appendChild(doneDel);
 
   document.querySelector(".done-ul").appendChild(doneItem);
+};
+
+// deleteDoneItem 정의 (done 삭제)
+const deleteDoneItem = (e) => {
+  const target = e.target.parentNode;
+  document.querySelector(".done-ul").removeChild(target);
+};
+
+// toggleDoneToDo 함수 정의 (done에서 todo로 이동)
+const toggleDoneToTodo = (e) => {
+  const doneItem = e.target.parentNode;
+  const doneText = doneItem.querySelector("#done-text").innerText;
+  deleteDoneItem(e);
+  printTodoItem(doneText);
 };

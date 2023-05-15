@@ -161,6 +161,24 @@
   margin-left: 50px;
 }
 
+.todo-text {
+  width: 489px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid black;
+  background: transparent;
+  font-family: "Dovemayo_gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  left: 147px;
+  top: 144px;
+  margin-left: 50px;
+}
+
 #submit-check {
   width: 41.91px;
   height: 34.01px;
@@ -308,16 +326,15 @@
 
 .done-ul {
   list-style: none;
-  margin-top: 150px;
+  margin-top: 280px;
+  margin-left: 20px;
 }
 
-/* .done-li {
-  display: flex;
-  width: 652.33px;
-  height: 41px;
-} */
+#done-item {
+  list-style: none;
+}
 
-.done-checkbox {
+#done-checkbox {
   width: 28.5px;
   height: 28.5px;
   background-color: transparent;
@@ -332,7 +349,7 @@
   margin-left: 30px;
 }
 
-.done-input {
+#done-text {
   width: 489px;
   height: 40px;
   border-top: none;
@@ -349,7 +366,7 @@
   margin-left: 42px;
 }
 
-.done-del {
+#done-del {
   width: 30px;
   height: 33px;
   background-image: url("images/trashcan.png");
