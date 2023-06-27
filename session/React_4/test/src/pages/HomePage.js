@@ -1,12 +1,11 @@
 import React from "react";
 import { styled } from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
-import { increase, decrease } from "../redux/counterSlice";
+import { increase, decrease } from "../redux/counterSlice"; // import 필수
 
 const HomePage = () => {
   const { number } = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
-  const onIncrease = () => dispatch(increase());
+  const onIncrease = () => dispatch(increase()); // 실질적으로 값 바꾸게 해주는 dispatch에 increase 전달
   const onDecrease = () => dispatch(decrease());
   return (
     <>

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 import styled from "styled-components";
+import { UserContext } from "../contexts/UserContext";
 
-const Header = ({ isDark }) => {
-  const user = "정연주";
+const Header = () => {
+  const { isDark } = useContext(ThemeContext);
+  const data = useContext(ThemeContext);
+  console.log(data);
+  const { user } = useContext(UserContext);
   return (
     <HeaderWrapper isDark={isDark}>
       <Title>{user}의 블로그</Title>
