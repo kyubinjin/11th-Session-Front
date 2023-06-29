@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { createSlice } from "@redux.js/toolkit";
+=======
+//userSlice
+import { createSlice } from "@reduxjs/toolkit";
+>>>>>>> 5f203ca49e4bcc0ca53c9ce0ae58fd33448dac41
 import { PURGE } from "redux-persist";
 
 // 초기값 설정
@@ -12,7 +17,11 @@ export const userSlice = createSlice({
   initialState, // 초기값
   // reducer 객체
   reducers: {
+<<<<<<< HEAD
     // action과 reducer 로직
+=======
+    // aciton과 reducer 로직
+>>>>>>> 5f203ca49e4bcc0ca53c9ce0ae58fd33448dac41
     initUser: (state) => {
       state.userID = initialState.userID;
       state.userName = initialState.userName;
@@ -28,4 +37,8 @@ export const userSlice = createSlice({
 });
 
 export const { initUser, setUser } = userSlice.actions;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f203ca49e4bcc0ca53c9ce0ae58fd33448dac41
 export default userSlice.reducer;
